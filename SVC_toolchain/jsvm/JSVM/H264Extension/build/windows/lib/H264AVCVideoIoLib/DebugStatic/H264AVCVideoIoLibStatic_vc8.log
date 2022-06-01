@@ -1,0 +1,10 @@
+﻿  H264AVCVideoIoLib.cpp
+  LargeFile.cpp
+  ReadBitstreamFile.cpp
+  ReadYuvFile.cpp
+  WriteBitstreamToFile.cpp
+  WriteYuvToFile.cpp
+  正在生成代码...
+E:\Program Files (x86)\VS 2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1397,5): warning MSB8012: TargetPath(E:\REEFT\360_multipath_transmission\SVC_toolchain\jsvm\JSVM\H264Extension\src\lib\H264AVCVideoIoLib\.\..\..\..\..\..\lib\H264AVCVideoIoLibStatic.lib) 与 Library 的 OutputFile 属性值(E:\REEFT\360_multipath_transmission\SVC_toolchain\jsvm\lib\H264AVCVideoIoLibStaticd.lib)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+E:\Program Files (x86)\VS 2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1399,5): warning MSB8012: TargetName(H264AVCVideoIoLibStatic) 与 Library 的 OutputFile 属性值(H264AVCVideoIoLibStaticd)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+  H264AVCVideoIoLibStatic_vc8.vcxproj -> E:\REEFT\360_multipath_transmission\SVC_toolchain\jsvm\JSVM\H264Extension\src\lib\H264AVCVideoIoLib\.\..\..\..\..\..\lib\H264AVCVideoIoLibStatic.lib

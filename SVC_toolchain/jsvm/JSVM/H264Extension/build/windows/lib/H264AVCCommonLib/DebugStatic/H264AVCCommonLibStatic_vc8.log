@@ -1,0 +1,44 @@
+﻿  H264AVCCommonLib.cpp
+  CabacContextModel.cpp
+  CabacContextModel2DBuffer.cpp
+  CFMO.cpp
+  DownConvert.cpp
+  Frame.cpp
+  Hrd.cpp
+  IntraPrediction.cpp
+  LoopFilter.cpp
+  MbData.cpp
+  MbDataAccess.cpp
+  MbDataCtrl.cpp
+  MbDataStruct.cpp
+  MbMvData.cpp
+  MbTransformCoeffs.cpp
+  MotionCompensation.cpp
+  MotionVectorCalculation.cpp
+  Mv.cpp
+  ParameterSetMng.cpp
+  PictureParameterSet.cpp
+  PocCalculator.cpp
+  正在生成代码...
+  正在编译...
+  Quantizer.cpp
+  QuarterPelFilter.cpp
+  ReconstructionBypass.cpp
+  ResizeParameters.cpp
+  SampleWeighting.cpp
+  ScalingMatrix.cpp
+  Sei.cpp
+  SequenceParameterSet.cpp
+  SliceHeader.cpp
+  SliceHeaderBase.cpp
+  Tables.cpp
+  TraceFile.cpp
+  Transform.cpp
+  Vui.cpp
+  YuvBufferCtrl.cpp
+  YuvMbBuffer.cpp
+  YuvPicBuffer.cpp
+  正在生成代码...
+E:\Program Files (x86)\VS 2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1397,5): warning MSB8012: TargetPath(E:\REEFT\360_multipath_transmission\SVC_toolchain\jsvm\JSVM\H264Extension\src\lib\H264AVCCommonLib\.\..\..\..\..\..\lib\H264AVCCommonLibStatic.lib) 与 Library 的 OutputFile 属性值(E:\REEFT\360_multipath_transmission\SVC_toolchain\jsvm\lib\H264AVCCommonLibStaticd.lib)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+E:\Program Files (x86)\VS 2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1399,5): warning MSB8012: TargetName(H264AVCCommonLibStatic) 与 Library 的 OutputFile 属性值(H264AVCCommonLibStaticd)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+  H264AVCCommonLibStatic_vc8.vcxproj -> E:\REEFT\360_multipath_transmission\SVC_toolchain\jsvm\JSVM\H264Extension\src\lib\H264AVCCommonLib\.\..\..\..\..\..\lib\H264AVCCommonLibStatic.lib

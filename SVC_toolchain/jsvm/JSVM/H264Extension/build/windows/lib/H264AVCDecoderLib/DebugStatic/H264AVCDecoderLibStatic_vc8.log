@@ -1,0 +1,18 @@
+﻿  H264AVCDecoderLib.cpp
+  BitReadBuffer.cpp
+  CabacReader.cpp
+  CabaDecoder.cpp
+  ControlMngH264AVCDecoder.cpp
+  CreaterH264AVCDecoder.cpp
+  GOPDecoder.cpp
+  H264AVCDecoder.cpp
+  MbDecoder.cpp
+  MbParser.cpp
+  NalUnitParser.cpp
+  SliceDecoder.cpp
+  SliceReader.cpp
+  UvlcReader.cpp
+  正在生成代码...
+E:\Program Files (x86)\VS 2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1397,5): warning MSB8012: TargetPath(E:\REEFT\360_multipath_transmission\SVC_toolchain\jsvm\JSVM\H264Extension\src\lib\H264AVCDecoderLib\.\..\..\..\..\..\lib\H264AVCDecoderLibStatic.lib) 与 Library 的 OutputFile 属性值(E:\REEFT\360_multipath_transmission\SVC_toolchain\jsvm\lib\H264AVCDecoderLibStaticd.lib)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+E:\Program Files (x86)\VS 2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1399,5): warning MSB8012: TargetName(H264AVCDecoderLibStatic) 与 Library 的 OutputFile 属性值(H264AVCDecoderLibStaticd)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+  H264AVCDecoderLibStatic_vc8.vcxproj -> E:\REEFT\360_multipath_transmission\SVC_toolchain\jsvm\JSVM\H264Extension\src\lib\H264AVCDecoderLib\.\..\..\..\..\..\lib\H264AVCDecoderLibStatic.lib
