@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from django.core.management.commands.runserver import Command as Runserver
 
 def main():
     """Run administrative tasks."""
@@ -19,4 +19,7 @@ def main():
 
 
 if __name__ == '__main__':
+    # Runserver.default_addr = '0.0.0.0'  # modify the default address
+    # Runserver.default_port = '8080'     # modify the default port
+
     main()

@@ -1,18 +1,17 @@
-"""
-下载接口
-"""
-
 import json
-import time
-import random
 from math import floor
 from turtle import down
 from django.http import JsonResponse, FileResponse
 from core.api.status_code import HttpStatusCode, RetStatusCode, RetMessage
 
 
+'''
+    Function: Determine which video tiles need to be transmitted according to the user's viewpoint
+    Input: x(int), y(int), coordinates of the user's viewpoint
+    Output: res(list), each element in res is a list [tile_x, tile_y]
+'''
 def decide_tile_layer(x, y):
-    over = False
+    over = False        # Checks whether the user's FoV crosses boundaries horizontally
     left_x = x - 640
     if left_x < 0:
         left_x = left_x + 3840
@@ -88,12 +87,10 @@ def download(request):
             }
             return JsonResponse(response, status=HttpStatusCode.RET_GENERAL_ERROR)
 
-        # TODO: change to linux
-        time.sleep(random.choice([0.01, 0.02, 0.03, 0.04]))
-        file_name = '..\\..\\static_svc\\seg' + str(seg) + '_tile' + str(tile_x) + '_' + str(tile_y) + '_L' + str(layer) + '.svc'
+        file_name = '../../static_svc/seg' + str(seg) + '_tile' + str(tile_x) + '_' + str(tile_y) + '_L' + str(layer) + '.svc'
         file = open(file_name,'rb')
         try:
-            response =FileResponse(file)  
+            response = FileResponse(file)  
             response['Content-Type']='application/octet-stream'  
             response['Content-Disposition']='attachment;filename="' + file_name + '"'  
             return response 
