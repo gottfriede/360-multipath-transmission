@@ -1,5 +1,11 @@
 import os
 
+'''
+    Function: Calculate the area where the tile intersects the user's FoV, using the proportion of the area to the tile as the weight
+    Input: tile_x(int), tile_y(int), The horizontal and vertical coordinates of the tile
+    Input: viewpoint_x(int), viewpoint_y(int), Horizontal and vertical coordinates of the user's viewpoint
+    Output: weight(float, between 0 and 1), The weight of the tile in the effective traffic
+'''
 def calculate_weight(tile_x, tile_y, viewpoint_x, viewpoint_y):
     tile_left = tile_x * 320
     tile_right = tile_left + 320
@@ -18,6 +24,12 @@ def calculate_weight(tile_x, tile_y, viewpoint_x, viewpoint_y):
     return ((x2-x1) * (y2-y1)) / 320 / 240
 
 
+'''
+    Function: Calculates the weighted file size of a single tile as its effective traffic
+    Input: seg(int), tile_x(int), tile_y(int), The parameters used to locate a tile
+    Input: weight(float, between 0 and 1), The weight of the tile, calculated by the function calculate_weight()
+    Output: weighted_size(float), The weighted file size of the tile, which is the effective traffic for that tile
+'''
 def calculate_weighted_file_size(seg, tile_x, tile_y, weight):
     size = 0
     file_name_base = 'download\\seg' + str(seg) + '_tile' + str(tile_x) + '_' + str(tile_y) + '_L'
@@ -49,7 +61,7 @@ if __name__ == '__main__':
             tile_y = int(tile.split(' ')[1])
             tile_weight = calculate_weight(tile_x, tile_y, viewpoint_x, viewpoint_y)
             tile_quality = calculate_weighted_file_size(seg, tile_x, tile_y, tile_weight)
-            # print('x:' + str(tile_x) + ' y:' + str(tile_y) + ' w:' + str(tile_weight) + ' q:' + str(tile_quality))
+            # print('x:' + str(tile_x) + ' y:' + str(tile_y) + ' weight:' + str(tile_weight) + ' quqlity:' + str(tile_quality))
             seg_total_quality = seg_total_quality + tile_quality
         print('seg' + str(seg) + ' quality: ' + str(int(seg_total_quality)))
         quality_sum = quality_sum + seg_total_quality
